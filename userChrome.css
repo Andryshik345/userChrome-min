@@ -1,0 +1,154 @@
+/*Цвет пустой области, не путать со страницей*/
+#browser vbox#appcontent tabbrowser,
+#content,
+#tabbrowser-tabpanels,
+browser[type=content-primary],
+browser[type=content] > html {
+background: #1f1f1f !important;}
+
+[sizemode="normal"][tabsintitlebar]:root:-moz-window-inactive{border-top:1px solid #3a393d !important;}
+#main-window {background: #1f1f1f !important;}
+
+/*Цвет фона неактивной вкладки*/
+.tab-background {background: #0c0c0c}
+
+/*Линия над активной вкладкой*/
+.tab-line {height: 0px !important;}
+
+/*Отступ над вкладками*/
+#TabsToolbar {margin-top:-2px !important;}
+
+/*Адресная строка*/
+#urlbar{
+background: none !important;
+border: none !important;
+box-shadow: none !inportant;
+font-size: 12px !important;
+padding-left: 3px !important;
+text-align: center;
+color:#999999 !important;}
+
+/*СКРЫТИЕ*/
+/*#PanelUI-menu-button,*/
+/*#pageActionButton,*/
+#identity-box,
+#identity-icon-labels,
+#connection-icon,
+.tab-close-button, /*Убрана кнопка закрытия вкладок*/
+#back-button, #forward-button, /*Кнопки назад-вперед*/
+/*.tabs-newtab-button, /*Кнопка новой вкладки*/
+.tab-icon-image /*Иконка вкладки*/
+{display: none !important;}
+
+/*Цвет навбара*/
+#nav-bar {box-shadow: none !important; border-top: 0 !important; background: #1f1f1f !important; font: "Google Sans Regular" !important;}
+
+/*Цвет заголовочного блока*/
+#navigator-toolbox > toolbar {background: #1f1f1f; color:#999999 !important;}
+
+.tabbrowser-tab::before, .tabbrowser-tab::after {display: none !important;}
+
+/*Кнопки управления окном*/
+.titlebar-buttonbox{visibility: hidden !important; margin: -90px !important;}
+
+/*Пустая облатсь слева в заголовке*/
+#TabsToolbar .titlebar-placeholder {display: none !important;}
+
+/*Цвет текста во вкладках*/
+.tab-label-container {color:#676767 !important; mask-image: initial !important;}
+.tab-label-container[selected="true"] {color: #999999 !important; mask-image: initial !important;}
+
+/*Скрытие линии под панелью и тени адресбара*/
+#navigator-toolbox::after {border-bottom: 0px !important;}
+#urlbar, .searchbar-textbox {box-shadow: none !important;}
+#urlbar:hover,.searchbar-textbox:hover {box-shadow: none !important;}
+
+.titlebar-placeholder[type="post-tabs"] {display: none !important;}
+
+/*Растягивание вкладок на всю площадь заголовка*/
+.tabbrowser-tab[fadein]:not([pinned]) {
+min-width: 100px !important;
+max-width: 100% !important;}
+
+#personal-bookmarks .bookmark-item > .toolbarbutton-icon {display: none;}
+
+/*Сдвиг страницы для скрытия скроллбара*/
+browser{
+margin-right: -17px !important;
+overflow-y: scroll;
+overflow-x: hidden;}
+
+/*Скрытие маркера звука*/
+.tab-icon-sound{display:none;}
+
+/*Скрытие маркера загрузки страницы*/
+.tab-throbber{display:none;}
+
+/*Центрирование текста во вкладках*/
+.tab-label {
+-moz-box-flex: 1 !important;
+text-align: center !important;}
+
+/*Стирание вспомогательного текста во вкладке при фокусировке*/
+input:focus::-moz-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+
+/*Цвет вкладки при наведении*/
+.tabbrowser-tab:hover{background:#0077a6 !important;}
+.tabbrowser-tab:hover .tab-label-container {color: #fff !important;}
+.tabbrowser-tab[selected="true"]:hover .tab-label-container {color: #999999 !important;}
+
+/*Скрытие в контекстном меню "закрепление вкладки"*/
+#context_pinTab{display:none;}
+
+/*Скрытие дропмаркера и пуска адрессбара*/
+.urlbar-history-dropmarker, .urlbar-go-button {display:none !important;}
+
+/*Цвет активной вкладки*/
+.tab-background[selected="true"] {
+background-attachment: none !important;
+background-color: #1f1f1f !important;
+background-image: none !important;}
+
+/*Цвет дроп меню.*/
+#PopupAutoCompleteRichResult .autocomplete-richlistbox {
+background: #1f1f1f !important;
+border:none !important;
+width:100% !important;
+margin-top:-1px !important;
+margin-bottom:-1px !important;
+margin-right:-1px !important;
+margin-left:-1px !important;}
+
+/*Цвет невыделенного-невыбранного текста*/
+.autocomplete-richlistitem .ac-title,
+.autocomplete-richlistitem .ac-action,
+.autocomplete-richlistitem .ac-separator
+{color: #777 !important;}
+
+/*Выделенная вкладка в дропменю*/
+.autocomplete-richlistitem:hover
+{background-color: #0077a6 !important;}
+
+/*Выбранная вкладка в дропменю*/
+.autocomplete-richlistitem[selected]
+{background-color: #0077a6 !important;}
+
+/*Выбранный текст в дропменю адресбара*/
+.autocomplete-richlistitem[selected=true] .ac-title,
+.ac-title[selected],
+.autocomplete-richlistitem[selected=true] .ac-action,
+.ac-action[selected],
+.autocomplete-richlistitem[selected=true] .ac-separator,
+.ac-separator[selected]
+{color: #fff !important;}
+
+/*Выделенный текст в дропменю адресбара*/
+.autocomplete-richlistitem:hover .ac-title,
+.ac-title:hover,
+.autocomplete-richlistitem:hover .ac-action,
+.ac-action:hover,
+.autocomplete-richlistitem:hover .ac-separator,
+.ac-separator:hover
+{color: #fff !important;}
+
+* {font-family: "Google Sans" !important;}
