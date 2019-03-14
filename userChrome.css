@@ -26,17 +26,17 @@ box-shadow: none !inportant;
 font-size: 12px !important;
 padding-left: 3px !important;
 text-align: center;
-color:#999999 !important;}
+color: #999999 !important;}
 
 /*СКРЫТИЕ*/
-/*#PanelUI-menu-button,*/
-/*#pageActionButton,*/
+/*#PanelUI-menu-button,*/ /*Кнопка меню*/
+/*#pageActionButton,*/ /*Кнопка опций в адрес.строке*/
 #identity-box,
 #identity-icon-labels,
 #connection-icon,
-.tab-close-button, /*Убрана кнопка закрытия вкладок*/
+.tab-close-button, /*Кнопка закрытия вкладок*/
 #back-button, #forward-button, /*Кнопки назад-вперед*/
-/*.tabs-newtab-button, /*Кнопка новой вкладки*/
+/*.tabs-newtab-button,*/ /*Кнопка новой вкладки*/
 .tab-icon-image /*Иконка вкладки*/
 {display: none !important;}
 
@@ -51,8 +51,8 @@ color:#999999 !important;}
 /*Кнопки управления окном*/
 .titlebar-buttonbox{visibility: hidden !important; margin: -90px !important;}
 
-/*Пустая облатсь слева в заголовке*/
-#TabsToolbar .titlebar-placeholder {display: none !important;}
+/*Пустая область слева в заголовке*/
+#TabsToolbar .titlebar-spacer[type="pre-tabs"] {display: none !important;}
 
 /*Цвет текста во вкладках*/
 .tab-label-container {color:#676767 !important; mask-image: initial !important;}
@@ -63,13 +63,12 @@ color:#999999 !important;}
 #urlbar, .searchbar-textbox {box-shadow: none !important;}
 #urlbar:hover,.searchbar-textbox:hover {box-shadow: none !important;}
 
-.titlebar-placeholder[type="post-tabs"] {display: none !important;}
-
 /*Растягивание вкладок на всю площадь заголовка*/
 .tabbrowser-tab[fadein]:not([pinned]) {
 min-width: 100px !important;
 max-width: 100% !important;}
 
+/*Иконки у закладок*/
 #personal-bookmarks .bookmark-item > .toolbarbutton-icon {display: none;}
 
 /*Сдвиг страницы для скрытия скроллбара*/
@@ -151,4 +150,8 @@ margin-left:-1px !important;}
 .ac-separator:hover
 {color: #fff !important;}
 
+/*Шрифт в браузере*/
 * {font-family: "Google Sans" !important;}
+
+/*Скрытие иконки инокгнито*/
+#TabsToolbar .private-browsing-indicator { display: none; }
