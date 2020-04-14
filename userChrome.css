@@ -28,6 +28,11 @@ padding-left: 3px !important;
 text-align-last: center !important;
 color: #999999 !important;}
 
+#urlbar-background {
+background: #1f1f1f !important;
+border: none !important;
+}
+
 /*СКРЫТИЕ*/
 /*#PanelUI-menu-button,*/ /*Кнопка меню*/
 /*#pageActionButton,*/ /*Кнопка опций в адрес.строке*/
@@ -38,7 +43,8 @@ color: #999999 !important;}
 #back-button, #forward-button, /*Кнопки назад-вперед*/
 /*.tabs-newtab-button,*/ /*Кнопка новой вкладки*/
 .tab-icon-image, /*Иконка вкладки*/
-#tracking-protection-icon-container /*Иконка инф-ции о безопас-ти стр-цы*/
+#tracking-protection-icon-container, /*Иконка инф-ции о безопас-ти стр-цы*/
+#fxa-toolbar-menu-button /*Иконка аккаунта*/
 {display: none !important;}
 
 /*Цвет навбара*/
