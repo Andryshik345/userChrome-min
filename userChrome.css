@@ -33,6 +33,11 @@ background: #1f1f1f !important;
 border: none !important;
 }
 
+.urlbarView-url {
+  /*yeah i know it's a very cool solution thx to mozilla*/
+  padding-right: 9000px;
+}
+
 /*СКРЫТИЕ*/
 /*#PanelUI-menu-button,*/ /*Кнопка меню*/
 /*#pageActionButton,*/ /*Кнопка опций в адрес.строке*/
