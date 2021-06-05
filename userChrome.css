@@ -10,7 +10,11 @@ background: #1f1f1f !important;}
 #main-window {background: #1f1f1f !important;}
 
 /*Цвет фона неактивной вкладки*/
-.tab-background {background: #0c0c0c}
+.tab-background {background: #0c0c0c;}
+
+.tabbrowser-tab {
+  padding-inline: 0px !important;
+}
 
 /*Линия над активной вкладкой*/
 .tab-line {height: 0px !important;}
@@ -34,7 +38,7 @@ border: none !important;
 }
 
 .urlbarView-url {
-  /*yeah i know it's a very cool solution thx to mozilla*/
+  /*спасибо мозилле за этот прекрасный костыль*/
   padding-right: 9000px;
 }
 
@@ -72,8 +76,12 @@ border: none !important;
 
 /*Скрытие линии под панелью и тени адресбара*/
 #navigator-toolbox::after {border-bottom: 0px !important;}
-#urlbar, .searchbar-textbox {box-shadow: none !important;}
-#urlbar:hover,.searchbar-textbox:hover {box-shadow: none !important;}
+#urlbar, .searchbar-textbox {
+/*! min-width: 100px !important; */
+max-width: 100% !important;}
+#urlbar:hover,.searchbar-textbox:hover {
+min-width: 100px !important;
+max-width: 100% !important;}
 
 /*Растягивание вкладок на всю площадь заголовка*/
 .tabbrowser-tab[fadein]:not([pinned]) {
@@ -90,18 +98,22 @@ overflow-y: scroll;
 overflow-x: hidden;}
 
 /*Скрытие маркера звука*/
-.tab-icon-sound{display:none;}
+/*все равно после обновления не работает*/
+/*.tab-icon-sound{display:none;}*/
 
 /*Скрытие маркера загрузки страницы*/
 .tab-throbber{display:none;}
 
 /*Центрирование текста во вкладках*/
-.tab-label {
+/*.tab-label {
 -moz-box-flex: 1 !important;
-text-align: center !important;}
+text-align: center !important;}*/
+/*Спасибо мозилле за этот прекрасный костыль*/
+.tab-label-container{ -moz-box-pack: center; -moz-box-orient: horizontal }
+.tab-secondary-label{ display:none }
 
 /*Стирание вспомогательного текста во вкладке при фокусировке*/
-input:focus::-moz-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder {background:#0077a6 !important;}
 
 /*Цвет вкладки при наведении*/
 .tabbrowser-tab:hover{background:#0077a6 !important;}
@@ -164,6 +176,11 @@ margin-left:-1px !important;}
 
 /*Шрифт в браузере*/
 * {font-family: "Google Sans" !important;}
+
+/*Спасибо новому обновлению за этот костыль: фиксит вид вкладок*/
+* {
+--proton-tab-block-margin: 0px !important;
+--tab-border-radius: 0px !important;}
 
 /*Скрытие иконки инокгнито*/
 #TabsToolbar .private-browsing-indicator { display: none; }
