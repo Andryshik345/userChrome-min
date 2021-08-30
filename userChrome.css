@@ -20,7 +20,10 @@ background: #1f1f1f !important;}
 .tab-line {height: 0px !important;}
 
 /*Отступ над вкладками*/
-#TabsToolbar {margin-top:-2px !important;}
+#TabsToolbar {margin-top:0px !important;}
+:root[id]{
+    --tab-block-margin: 0px !important;
+}
 
 /*Адресная строка*/
 #urlbar{
@@ -75,7 +78,8 @@ border: none !important;
 .tab-label-container[selected="true"] {color: #999999 !important; mask-image: initial !important;}
 
 /*Скрытие линии под панелью и тени адресбара*/
-#navigator-toolbox::after {border-bottom: 0px !important;}
+#navigator-toolbox::after {border-bottom: 0px !important; }
+#navigator-toolbox {border-width: 0px !important; }
 #urlbar, .searchbar-textbox {
 /*! min-width: 100px !important; */
 max-width: 100% !important;}
