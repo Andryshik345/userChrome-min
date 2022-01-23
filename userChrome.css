@@ -109,9 +109,7 @@ overflow-x: hidden;}
 .tab-throbber{display:none;}
 
 /*Центрирование текста во вкладках*/
-/*.tab-label {
--moz-box-flex: 1 !important;
-text-align: center !important;}*/
+.tab-label { line-height: 2.5 !important;}
 /*Спасибо мозилле за этот прекрасный костыль*/
 .tab-label-container{ -moz-box-pack: center; -moz-box-orient: horizontal }
 .tab-secondary-label{ display:none }
