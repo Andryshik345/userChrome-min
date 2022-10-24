@@ -186,3 +186,6 @@ margin-left:-1px !important;}
 
 /*Скрытие иконки инокгнито*/
 #TabsToolbar .private-browsing-indicator { display: none; }
+
+/*Скрытие кнопки списка всех вкладок*/
+#alltabs-button{ display: none }
