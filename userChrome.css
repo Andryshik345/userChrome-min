@@ -16,11 +16,20 @@ background: #1f1f1f !important;}
   padding-inline: 0px !important;
 }
 
+#tabbrowser-tabs {
+  margin-inline-start: 0px !important;
+  padding-inline-start: 0px !important;
+  border-inline-start: 0px !important;
+}
+
 /*Линия над активной вкладкой*/
 .tab-line {height: 0px !important;}
 
 /*Отступ над вкладками*/
-#TabsToolbar {margin-top:0px !important;}
+#TabsToolbar {
+  margin-top:0px !important;
+}
+
 :root[id]{
     --tab-block-margin: 0px !important;
 }
@@ -71,7 +80,7 @@ border: none !important;
 .titlebar-buttonbox{visibility: hidden !important; margin: -90px !important;}
 
 /*Пустая область слева в заголовке*/
-#TabsToolbar .titlebar-spacer[type="pre-tabs"] {display: none !important;}
+#TabsToolbar .titlebar-spacer[type="pre-tabs"], .titlebar-spacer[type="post-tabs"] {display: none !important;}
 
 /*Цвет текста во вкладках*/
 .tab-label-container {color:#676767 !important; mask-image: initial !important;}
