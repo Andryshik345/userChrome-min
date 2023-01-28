@@ -111,9 +111,10 @@ margin-right: -17px !important;
 overflow-y: scroll;
 overflow-x: hidden;}
 
-/*Скрытие маркера звука*/
-/*все равно после обновления не работает*/
-/*.tab-icon-sound{display:none;}*/
+/*Фикс иконки звука на вкладке */
+.tab-icon-overlay[indicator-replaces-favicon] {
+    opacity: 1 !important;
+}
 
 /*Скрытие маркера загрузки страницы*/
 .tab-throbber{display:none;}
