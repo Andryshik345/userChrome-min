@@ -203,7 +203,9 @@ margin-left:-1px !important;}
 
 /*  Clean and tight extensions menu https://github.com/datguypiko/Firefox-Mod-Blur */
 #unified-extensions-panel #unified-extensions-view {
-  max-width: 200px !important;
+    max-width: 200px !important;
+    --uei-icon-size: 16px !important;
+    --arrowpanel-menuitem-margin-inline: 6px !important;
 }
 
 #unified-extensions-view .panel-header,
@@ -235,7 +237,7 @@ margin-left:-1px !important;}
 
 #unified-extensions-view .unified-extensions-item-icon, 
 #unified-extensions-view .unified-extensions-item[unified-extensions="true"] .webextension-browser-action > .toolbarbutton-badge-stack {
-  margin-inline-end: 0px !important;
+    margin-inline-end: 0px !important;
 }
 
 #unified-extensions-view #overflowed-extensions-list {
@@ -252,5 +254,5 @@ margin-left:-1px !important;}
 #unified-extensions-view .unified-extensions-list {
     display: flex !important;
     flex-wrap: wrap !important;
-  border-top: 1px solid #aeaeae33 !important;
+    border-top: 1px solid #aeaeae33 !important;
 }
