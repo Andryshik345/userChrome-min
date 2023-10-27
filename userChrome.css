@@ -8,8 +8,21 @@ background: #1f1f1f !important;}
 
 #main-window {background: #1f1f1f !important;}
 
+/*Цвет вкладки при наведении*/
+.tabbrowser-tab:hover{background: #0077a6 !important;}
+.tabbrowser-tab:hover .tab-label-container {color: #fff !important;}
+
 /*Цвет фона неактивной вкладки*/
 .tab-background {background: #0c0c0c;}
+
+/*Цвет активной вкладки*/
+.tab-background:is([selected]) {
+  background-attachment: none !important;
+  background-color: #1f1f1f !important;
+  background-image: none !important;
+}
+
+.tabbrowser-tab:is([selected]) .tab-label-container {color: #999999 !important;}
 
 .tabbrowser-tab {
   padding-inline: 0px !important;
@@ -127,22 +140,11 @@ overflow-x: hidden;}
 /*Стирание вспомогательного текста во вкладке при фокусировке*/
 input:focus::-moz-placeholder {background:#0077a6 !important;}
 
-/*Цвет вкладки при наведении*/
-.tabbrowser-tab:hover{background:#0077a6 !important;}
-.tabbrowser-tab:hover .tab-label-container {color: #fff !important;}
-.tabbrowser-tab[selected="true"]:hover .tab-label-container {color: #999999 !important;}
-
 /*Скрытие в контекстном меню "закрепление вкладки"*/
 #context_pinTab{display:none;}
 
 /*Скрытие дропмаркера и пуска адрессбара*/
 .urlbar-history-dropmarker, .urlbar-go-button {display:none !important;}
-
-/*Цвет активной вкладки*/
-.tab-background[selected="true"] {
-background-attachment: none !important;
-background-color: #1f1f1f !important;
-background-image: none !important;}
 
 /*Цвет дроп меню.*/
 #PopupAutoCompleteRichResult .autocomplete-richlistbox {
