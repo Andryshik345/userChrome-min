@@ -260,3 +260,7 @@ margin-left:-1px !important;}
     padding-bottom: 3px !important;
     border-bottom: 1px solid #aeaeae33 !important;
 }
+
+#urlbar-searchmode-switcher {
+    display: none !important;
+}
