@@ -57,7 +57,7 @@ text-align-last: center !important;
 color: #999999 !important;}
 
 .urlbar-background {
-background: #1f1f1f !important;
+background-color: #1f1f1f !important;
 border: none !important;
 }
 
@@ -69,7 +69,7 @@ border: none !important;
 /*СКРЫТИЕ*/
 /*#PanelUI-menu-button,*/ /*Кнопка меню*/
 /*#pageActionButton,*/ /*Кнопка опций в адрес.строке*/
-#identity-box,
+/*#identity-box,*/
 #identity-icon-labels,
 #connection-icon,
 .tab-close-button, /*Кнопка закрытия вкладок*/
@@ -79,6 +79,11 @@ border: none !important;
 #tracking-protection-icon-container, /*Иконка инф-ции о безопас-ти стр-цы*/
 #fxa-toolbar-menu-button /*Иконка аккаунта*/
 {display: none !important;}
+
+#identity-icon-box,
+#identity-permission-box {
+    display: none !important;
+}
 
 /*Цвет навбара*/
 #nav-bar {box-shadow: none !important; border-top: 0 !important; background: #1f1f1f !important; font: "Google Sans Regular" !important;}
