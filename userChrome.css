@@ -77,6 +77,7 @@ border: none !important;
 /*.tabs-newtab-button,*/ /*Кнопка новой вкладки*/
 .tab-icon-image, /*Иконка вкладки*/
 #tracking-protection-icon-container, /*Иконка инф-ции о безопас-ти стр-цы*/
+#trust-icon-container, /*Иконка безопасности страницы*/
 #fxa-toolbar-menu-button /*Иконка аккаунта*/
 {display: none !important;}
 
