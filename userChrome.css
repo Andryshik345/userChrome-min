@@ -13,7 +13,11 @@ background: #1f1f1f !important;}
 .tabbrowser-tab:hover .tab-label-container {color: #fff !important;}
 
 /*Цвет фона неактивной вкладки*/
-.tab-background {background: #0c0c0c;}
+.tab-background { 
+    background: #0c0c0c;
+    box-shadow: 0px !important;
+    margin-block: 0px !important;
+}
 
 /*Цвет активной вкладки*/
 .tab-background:is([selected]) {
@@ -32,6 +36,7 @@ background: #1f1f1f !important;}
   margin-inline-start: 0px !important;
   padding-inline-start: 0px !important;
   border-inline-start: 0px !important;
+  min-height: 0px !important;
 }
 
 /*Линия над активной вкладкой*/
